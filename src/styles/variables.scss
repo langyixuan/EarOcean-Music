@@ -1,0 +1,72 @@
+// Layout中的样式
+$header-height: 70px;
+$player-height: 70px;
+
+// 颜色变量
+$black: #363838;
+$white: #ffffff;
+$aqua-green: #16d6cd;
+// $aqua-green: #ff0b99;
+$blue: #0569ff;
+$gray: #696b6b;
+
+// 边框圆角变量
+$br-50: 50px;
+$br-30: 30px;
+$br-20: 20px;
+$br-10: 10px;
+$br-mlist: 30px;
+$br-album : 10px;
+
+// 字体大小
+$mini-f: 12px;
+$small-f: 14px;
+$normal-f: 16px;
+$big-f: 18px;
+$large-f: 22px;
+$bigtitle-f: 30px;
+
+// 容器内边距
+$wrapper-p: 15px;
+
+// 标签字体样式
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@mixin tagstyle {
+    font-size: $large-f;
+    font-weight: 900;
+    font-family: 'Prompt', sans-serif;
+    // margin-left: 8%;
+    padding: 20px 15px;
+}
+
+// 超出隐藏用省略号表示
+@mixin hidden {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+@mixin hiddenmore {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    // -webkit-line-clamp: 2; //多行在这里修改数字即可
+    overflow:hidden;
+    -webkit-box-orient: vertical;
+}
+
+// 图片阴影
+$img-shadow: -3px -3px 6px rgba(211, 218, 218, 0.5),
+5px 5px 5px rgba(160, 163, 163, 0.5);
+$img-shadow2: 0 7px 5px -5px #333;
+$img-shadow3: 3px 3px 1px 1px rgb(170, 170, 170);
+
+// 滚动条
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+ }
+ /* 滚动条的滑块 */
+ ::-webkit-scrollbar-thumb {
+  background-color: $aqua-green;
+  border-radius: 3px;
+ }
