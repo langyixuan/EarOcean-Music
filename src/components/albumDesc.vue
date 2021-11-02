@@ -27,6 +27,7 @@ export default {
     // 跳转到专辑详情页面
     toAlbumDetail(id) {
       this.$router.push(`/album/${id}`)
+      console.log(this.$router)
     },
   },
 }

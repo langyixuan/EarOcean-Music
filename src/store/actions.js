@@ -41,10 +41,6 @@ const actions = {
   savePlayMode({ commit }, payload) {
     commit('savePlayMode', payload)
   },
-
-
-
-
 }
 
 export default actions
